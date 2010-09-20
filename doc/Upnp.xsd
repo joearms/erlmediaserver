@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      /Main/Kodegen/Kodegen/Upnp/Upnp.xsd – Linn Open Source Software
+    </title>
+        <link rel="search" href="/trac/search" />
+        <link rel="help" href="/trac/wiki/TracGuide" />
+        <link rel="alternate" href="/trac/export/81/Main/Kodegen/Kodegen/Upnp/Upnp.xsd" type="text/plain" title="Original Format" />
+        <link rel="up" href="/trac/browser/Main/Kodegen/Kodegen/Upnp?rev=81" title="Parent directory" />
+        <link rel="start" href="/trac/wiki" />
+        <link rel="stylesheet" href="/trac/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/trac/chrome/common/css/code.css" type="text/css" /><link rel="stylesheet" href="/trac/pygments/trac.css" type="text/css" /><link rel="stylesheet" href="/trac/chrome/common/css/browser.css" type="text/css" />
+        <link rel="shortcut icon" href="/trac/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/trac/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/trac/search/opensearch" title="Search Linn Open Source Software" />
+    <script type="text/javascript" src="/trac/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/trac/chrome/common/js/trac.js"></script><script type="text/javascript" src="/trac/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/trac/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#jumploc input").hide();
+        $("#jumploc select").change(function () {
+          this.parentNode.parentNode.submit();
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://oss.linn.co.uk/"><img src="/trac/chrome/site/Linn_Oss_banner.png" alt="Linn Open Source Site" height="100" width="500" /></a>
+      </div>
+      <form id="search" action="/trac/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/trac/wiki/TracGuide">Help/Guide</a></li><li><a href="/trac/about">About Trac</a></li><li><a href="/trac/prefs">Preferences</a></li><li class="last"><a href="/trac/openidlogin">OpenID Login</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="/trac/wiki">Wiki</a></li><li><a href="/trac/timeline">Timeline</a></li><li><a href="/trac/roadmap">Roadmap</a></li><li class="active"><a href="/trac/browser">Browse Source</a></li><li><a href="/trac/report">View Tickets</a></li><li class="last"><a href="/trac/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+            <li class="first "><a href="/trac/changeset/81/Main/Kodegen/Kodegen/Upnp/Upnp.xsd">Last Change</a></li><li><a href="/trac/browser/Main/Kodegen/Kodegen/Upnp/Upnp.xsd?annotate=blame&amp;rev=81" title="Annotate each line with the last changed revision (this can be time consuming...)">Annotate</a></li><li class="last"><a href="/trac/log/Main/Kodegen/Kodegen/Upnp/Upnp.xsd?rev=81">Revision Log</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="browser">
+      <h1>
+    <a class="pathentry first" title="Go to root directory" href="/trac/browser?rev=81">root</a><span class="pathentry sep">/</span><a class="pathentry" title="View Main" href="/trac/browser/Main?rev=81">Main</a><span class="pathentry sep">/</span><a class="pathentry" title="View Kodegen" href="/trac/browser/Main/Kodegen?rev=81">Kodegen</a><span class="pathentry sep">/</span><a class="pathentry" title="View Kodegen" href="/trac/browser/Main/Kodegen/Kodegen?rev=81">Kodegen</a><span class="pathentry sep">/</span><a class="pathentry" title="View Upnp" href="/trac/browser/Main/Kodegen/Kodegen/Upnp?rev=81">Upnp</a><span class="pathentry sep">/</span><a class="pathentry" title="View Upnp.xsd" href="/trac/browser/Main/Kodegen/Kodegen/Upnp/Upnp.xsd?rev=81">Upnp.xsd</a>
+    <span class="pathentry sep">@</span>
+      <a class="pathentry" href="/trac/changeset/81" title="View changeset 81">81</a>
+    <br style="clear: both" />
+  </h1>
+      <div id="jumprev">
+        <form action="" method="get">
+          <div>
+            <label for="rev" title="Hint: clear the field to view latest revision">
+              View revision:</label>
+            <input type="text" id="rev" name="rev" value="81" size="6" />
+          </div>
+        </form>
+      </div>
+      <table id="info" summary="Revision info">
+        <tr>
+          <th scope="col">
+            Revision <a href="/trac/changeset/81">81</a>, <span title="4261 bytes">4.2 KB</span>
+            (checked in by grahamd, <a class="timeline" href="/trac/timeline?from=2008-05-06T23%3A11%3A11Z%2B0100&amp;precision=second" title="2008-05-06T23:11:11Z+0100 in Timeline">22 months</a> ago)
+          </th>
+        </tr>
+        <tr>
+          <td class="message searchable">
+              <p>
+Removed Optional element and sendEventsAttribute element support in Upnp.xsd, and fuxed code behind.<br />
+</p>
+          </td>
+        </tr>
+      </table>
+      <div id="preview" class="searchable">
+    <table class="code"><thead><tr><th class="lineno" title="Line numbers">Line</th><th class="content"> </th></tr></thead><tbody><tr><th id="L1"><a href="#L1">1</a></th><td>&lt;?xml version="1.0" encoding="utf-8" ?&gt;</td></tr><tr><th id="L2"><a href="#L2">2</a></th><td>&lt;xs:schema xmlns="urn:schemas-upnp-org:service-1-0"</td></tr><tr><th id="L3"><a href="#L3">3</a></th><td>           xmlns:xs="http://www.w3.org/2001/XMLSchema"</td></tr><tr><th id="L4"><a href="#L4">4</a></th><td>           targetNamespace="urn:schemas-upnp-org:service-1-0"</td></tr><tr><th id="L5"><a href="#L5">5</a></th><td>           elementFormDefault="qualified"&gt;</td></tr><tr><th id="L6"><a href="#L6">6</a></th><td>  &lt;xs:element name="scpd" type="scpd"&gt;</td></tr><tr><th id="L7"><a href="#L7">7</a></th><td>  &lt;/xs:element&gt;</td></tr><tr><th id="L8"><a href="#L8">8</a></th><td>  &lt;xs:complexType name="scpd"&gt;</td></tr><tr><th id="L9"><a href="#L9">9</a></th><td>    &lt;xs:all&gt;</td></tr><tr><th id="L10"><a href="#L10">10</a></th><td>      &lt;xs:element name="specVersion" type="specVersion" minOccurs="0" maxOccurs="1"/&gt;</td></tr><tr><th id="L11"><a href="#L11">11</a></th><td>      &lt;xs:element name="actionList" type="actionList" minOccurs="1" maxOccurs="1"/&gt;</td></tr><tr><th id="L12"><a href="#L12">12</a></th><td>      &lt;xs:element name="serviceStateTable" type="serviceStateTable" minOccurs="1" maxOccurs="1"/&gt;</td></tr><tr><th id="L13"><a href="#L13">13</a></th><td>    &lt;/xs:all&gt;</td></tr><tr><th id="L14"><a href="#L14">14</a></th><td>  &lt;/xs:complexType&gt;</td></tr><tr><th id="L15"><a href="#L15">15</a></th><td>  &lt;xs:complexType name="specVersion"&gt;</td></tr><tr><th id="L16"><a href="#L16">16</a></th><td>    &lt;xs:sequence&gt;</td></tr><tr><th id="L17"><a href="#L17">17</a></th><td>      &lt;xs:element name="major" type="xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/&gt;</td></tr><tr><th id="L18"><a href="#L18">18</a></th><td>      &lt;xs:element name="minor" type="xs:nonNegativeInteger" minOccurs="1" maxOccurs="1"/&gt;</td></tr><tr><th id="L19"><a href="#L19">19</a></th><td>    &lt;/xs:sequence&gt;</td></tr><tr><th id="L20"><a href="#L20">20</a></th><td>  &lt;/xs:complexType&gt;</td></tr><tr><th id="L21"><a href="#L21">21</a></th><td>  &lt;xs:complexType name="actionList"&gt;</td></tr><tr><th id="L22"><a href="#L22">22</a></th><td>    &lt;xs:sequence&gt;</td></tr><tr><th id="L23"><a href="#L23">23</a></th><td>      &lt;xs:element name="action" type="action" minOccurs="0" maxOccurs="unbounded"/&gt;</td></tr><tr><th id="L24"><a href="#L24">24</a></th><td>    &lt;/xs:sequence&gt;</td></tr><tr><th id="L25"><a href="#L25">25</a></th><td>  &lt;/xs:complexType&gt;</td></tr><tr><th id="L26"><a href="#L26">26</a></th><td>  &lt;xs:complexType name="action"&gt;</td></tr><tr><th id="L27"><a href="#L27">27</a></th><td>    &lt;xs:all&gt;</td></tr><tr><th id="L28"><a href="#L28">28</a></th><td>      &lt;xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/&gt;</td></tr><tr><th id="L29"><a href="#L29">29</a></th><td>      &lt;xs:element name="argumentList" type="argumentList" minOccurs="0" maxOccurs="1"/&gt;</td></tr><tr><th id="L30"><a href="#L30">30</a></th><td>    &lt;/xs:all&gt;</td></tr><tr><th id="L31"><a href="#L31">31</a></th><td>  &lt;/xs:complexType&gt;</td></tr><tr><th id="L32"><a href="#L32">32</a></th><td>  &lt;xs:complexType name="argumentList"&gt;</td></tr><tr><th id="L33"><a href="#L33">33</a></th><td>    &lt;xs:sequence&gt;</td></tr><tr><th id="L34"><a href="#L34">34</a></th><td>      &lt;xs:element name="argument" type="argument" minOccurs="1" maxOccurs="unbounded"/&gt;</td></tr><tr><th id="L35"><a href="#L35">35</a></th><td>    &lt;/xs:sequence&gt;</td></tr><tr><th id="L36"><a href="#L36">36</a></th><td>  &lt;/xs:complexType&gt;</td></tr><tr><th id="L37"><a href="#L37">37</a></th><td>  &lt;xs:complexType name="argument"&gt;</td></tr><tr><th id="L38"><a href="#L38">38</a></th><td>    &lt;xs:all&gt;</td></tr><tr><th id="L39"><a href="#L39">39</a></th><td>      &lt;xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/&gt;</td></tr><tr><th id="L40"><a href="#L40">40</a></th><td>      &lt;xs:element name="direction" type="direction" minOccurs="1" maxOccurs="1"/&gt;</td></tr><tr><th id="L41"><a href="#L41">41</a></th><td>      &lt;xs:element name="retval" type="retval" minOccurs="0" maxOccurs="1"/&gt;</td></tr><tr><th id="L42"><a href="#L42">42</a></th><td>      &lt;xs:element name="relatedStateVariable" type="xs:string" minOccurs="1" maxOccurs="1"/&gt;</td></tr><tr><th id="L43"><a href="#L43">43</a></th><td>    &lt;/xs:all&gt;</td></tr><tr><th id="L44"><a href="#L44">44</a></th><td>  &lt;/xs:complexType&gt;</td></tr><tr><th id="L45"><a href="#L45">45</a></th><td>  &lt;xs:simpleType name="direction"&gt;</td></tr><tr><th id="L46"><a href="#L46">46</a></th><td>    &lt;xs:restriction base="xs:string"&gt;</td></tr><tr><th id="L47"><a href="#L47">47</a></th><td>      &lt;xs:enumeration value="in"/&gt;</td></tr><tr><th id="L48"><a href="#L48">48</a></th><td>      &lt;xs:enumeration value="out"/&gt;</td></tr><tr><th id="L49"><a href="#L49">49</a></th><td>    &lt;/xs:restriction&gt;</td></tr><tr><th id="L50"><a href="#L50">50</a></th><td>  &lt;/xs:simpleType&gt;</td></tr><tr><th id="L51"><a href="#L51">51</a></th><td>  &lt;xs:simpleType name="retval"&gt;</td></tr><tr><th id="L52"><a href="#L52">52</a></th><td>    &lt;xs:restriction base="xs:string"&gt;</td></tr><tr><th id="L53"><a href="#L53">53</a></th><td>      &lt;xs:minLength value="0"/&gt;</td></tr><tr><th id="L54"><a href="#L54">54</a></th><td>      &lt;xs:maxLength value="0"/&gt;</td></tr><tr><th id="L55"><a href="#L55">55</a></th><td>    &lt;/xs:restriction&gt;</td></tr><tr><th id="L56"><a href="#L56">56</a></th><td>  &lt;/xs:simpleType&gt;</td></tr><tr><th id="L57"><a href="#L57">57</a></th><td>  &lt;xs:complexType name="serviceStateTable"&gt;</td></tr><tr><th id="L58"><a href="#L58">58</a></th><td>    &lt;xs:sequence&gt;</td></tr><tr><th id="L59"><a href="#L59">59</a></th><td>      &lt;xs:element name="stateVariable" type="stateVariable" minOccurs="0" maxOccurs="unbounded"/&gt;</td></tr><tr><th id="L60"><a href="#L60">60</a></th><td>    &lt;/xs:sequence&gt;</td></tr><tr><th id="L61"><a href="#L61">61</a></th><td>  &lt;/xs:complexType&gt;</td></tr><tr><th id="L62"><a href="#L62">62</a></th><td>  &lt;xs:complexType name="stateVariable"&gt;</td></tr><tr><th id="L63"><a href="#L63">63</a></th><td>    &lt;xs:all&gt;</td></tr><tr><th id="L64"><a href="#L64">64</a></th><td>      &lt;xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/&gt;</td></tr><tr><th id="L65"><a href="#L65">65</a></th><td>      &lt;xs:element name="dataType" type="dataType" minOccurs="1" maxOccurs="1"/&gt;</td></tr><tr><th id="L66"><a href="#L66">66</a></th><td>      &lt;xs:element name="allowedValueList" type="allowedValueList" minOccurs="0" maxOccurs="1"/&gt;</td></tr><tr><th id="L67"><a href="#L67">67</a></th><td>      &lt;xs:element name="allowedValueRange" type="allowedValueRange" minOccurs="0" maxOccurs="1"/&gt;</td></tr><tr><th id="L68"><a href="#L68">68</a></th><td>      &lt;xs:element name="defaultValue" type="xs:string" minOccurs="0" maxOccurs="1"/&gt;</td></tr><tr><th id="L69"><a href="#L69">69</a></th><td>    &lt;/xs:all&gt;</td></tr><tr><th id="L70"><a href="#L70">70</a></th><td>    &lt;xs:attribute name="sendEvents" type="sendEvents"/&gt;</td></tr><tr><th id="L71"><a href="#L71">71</a></th><td>  &lt;/xs:complexType&gt;</td></tr><tr><th id="L72"><a href="#L72">72</a></th><td>  &lt;xs:simpleType name="dataType"&gt;</td></tr><tr><th id="L73"><a href="#L73">73</a></th><td>    &lt;xs:restriction base="xs:string"&gt;</td></tr><tr><th id="L74"><a href="#L74">74</a></th><td>      &lt;xs:enumeration value="string"/&gt;</td></tr><tr><th id="L75"><a href="#L75">75</a></th><td>      &lt;xs:enumeration value="base64"/&gt;</td></tr><tr><th id="L76"><a href="#L76">76</a></th><td>      &lt;xs:enumeration value="i1"/&gt;</td></tr><tr><th id="L77"><a href="#L77">77</a></th><td>      &lt;xs:enumeration value="i2"/&gt;</td></tr><tr><th id="L78"><a href="#L78">78</a></th><td>      &lt;xs:enumeration value="i4"/&gt;</td></tr><tr><th id="L79"><a href="#L79">79</a></th><td>      &lt;xs:enumeration value="ui1"/&gt;</td></tr><tr><th id="L80"><a href="#L80">80</a></th><td>      &lt;xs:enumeration value="ui2"/&gt;</td></tr><tr><th id="L81"><a href="#L81">81</a></th><td>      &lt;xs:enumeration value="ui4"/&gt;</td></tr><tr><th id="L82"><a href="#L82">82</a></th><td>      &lt;xs:enumeration value="boolean"/&gt;</td></tr><tr><th id="L83"><a href="#L83">83</a></th><td>    &lt;/xs:restriction&gt;</td></tr><tr><th id="L84"><a href="#L84">84</a></th><td>  &lt;/xs:simpleType&gt;</td></tr><tr><th id="L85"><a href="#L85">85</a></th><td>  &lt;xs:simpleType name="sendEvents"&gt;</td></tr><tr><th id="L86"><a href="#L86">86</a></th><td>    &lt;xs:restriction base="xs:string"&gt;</td></tr><tr><th id="L87"><a href="#L87">87</a></th><td>      &lt;xs:enumeration value="yes"/&gt;</td></tr><tr><th id="L88"><a href="#L88">88</a></th><td>      &lt;xs:enumeration value="no"/&gt;</td></tr><tr><th id="L89"><a href="#L89">89</a></th><td>    &lt;/xs:restriction&gt;</td></tr><tr><th id="L90"><a href="#L90">90</a></th><td>  &lt;/xs:simpleType&gt;</td></tr><tr><th id="L91"><a href="#L91">91</a></th><td>  &lt;xs:complexType name="allowedValueList"&gt;</td></tr><tr><th id="L92"><a href="#L92">92</a></th><td>    &lt;xs:sequence&gt;</td></tr><tr><th id="L93"><a href="#L93">93</a></th><td>      &lt;xs:element name="allowedValue" type="xs:string" minOccurs="1" maxOccurs="unbounded"/&gt;</td></tr><tr><th id="L94"><a href="#L94">94</a></th><td>    &lt;/xs:sequence&gt;</td></tr><tr><th id="L95"><a href="#L95">95</a></th><td>  &lt;/xs:complexType&gt;</td></tr><tr><th id="L96"><a href="#L96">96</a></th><td>  &lt;xs:complexType name="allowedValueRange"&gt;</td></tr><tr><th id="L97"><a href="#L97">97</a></th><td>    &lt;xs:all&gt;</td></tr><tr><th id="L98"><a href="#L98">98</a></th><td>      &lt;xs:element name="minimum" type="xs:integer" minOccurs="0" maxOccurs="1"/&gt;</td></tr><tr><th id="L99"><a href="#L99">99</a></th><td>      &lt;xs:element name="maximum" type="xs:integer" minOccurs="0" maxOccurs="1"/&gt;</td></tr><tr><th id="L100"><a href="#L100">100</a></th><td>      &lt;xs:element name="step" type="xs:nonNegativeInteger" minOccurs="0" maxOccurs="1"/&gt;</td></tr><tr><th id="L101"><a href="#L101">101</a></th><td>    &lt;/xs:all&gt;</td></tr><tr><th id="L102"><a href="#L102">102</a></th><td>  &lt;/xs:complexType&gt;</td></tr><tr><th id="L103"><a href="#L103">103</a></th><td>&lt;/xs:schema&gt;</td></tr></tbody></table>
+      </div>
+      <div id="help">
+        <strong>Note:</strong> See <a href="/trac/wiki/TracBrowser">TracBrowser</a>
+        for help on using the browser.
+      </div>
+      <div id="anydiff">
+        <form action="/trac/diff" method="get">
+          <div class="buttons">
+            <input type="hidden" name="new_path" value="/Main/Kodegen/Kodegen/Upnp/Upnp.xsd" />
+            <input type="hidden" name="old_path" value="/Main/Kodegen/Kodegen/Upnp/Upnp.xsd" />
+            <input type="hidden" name="new_rev" value="81" />
+            <input type="hidden" name="old_rev" value="81" />
+            <input type="submit" value="View changes..." title="Select paths and revs for Diff" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/trac/export/81/Main/Kodegen/Kodegen/Upnp/Upnp.xsd">Original Format</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/trac/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/trac/about"><strong>Trac 0.11.2</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit Linn Open Source Software at<br/><a href="http://oss.linn.co.uk/">http://oss.linn.co.uk/</a></p>
+    </div>
+  </body>
+</html>

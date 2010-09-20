@@ -1,0 +1,19 @@
+POST /MediaServer1/ContentDirectory1/control HTTP/1.1
+HOST: 192.168.2.200:50008
+CONTENT-LENGTH: 440
+CONTENT-TYPE: text/xml; charset="utf-8"
+SOAPACTION: "urn:schemas-upnp-org:service:ContentDirectory:1#Browse"
+USER-AGENT: Darwin/9.2.2, UPnP/1.0, Portable SDK for UPnP devices/1.6.4
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+	<s:Body>
+		<u:Browse xmlns:u="urn:schemas-upnp-org:service:ContentDirectory:1">
+			<ObjectID>2</ObjectID>
+			<BrowseFlag>BrowseDirectChildren</BrowseFlag>
+			<Filter>*</Filter>
+			<StartingIndex>0</StartingIndex>
+			<RequestedCount>1000</RequestedCount>
+			<SortCriteria></SortCriteria>
+		</u:Browse>
+	</s:Body>
+</s:Envelope>

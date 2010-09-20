@@ -1,0 +1,182 @@
+
+ ---------- ssdp:alive ----------
+ 
+ NOTIFY * HTTP/1.1 
+ HOST: 239.255.255.250:1900 
+ CACHE-CONTROL: max-age = seconds until advertisement expires 
+ LOCATION: URL for UPnP description for root device 
+ NT: search target 
+ NTS: ssdp:alive 
+ SERVER: OS/version UPnP/1.0 product/version 
+ USN: advertisement UUID 
+ 
+(No body for request with method NOTIFY, but note that the message must have a blank line following the last HTTP header.)  
+The TTL for the IP packet should default to 4 and should be configurable.  
+Listed below are details for the request line and headers appearing in the listing above. All header values are case sensitive 
+except where noted.  
+Request line
+  
+NOTIFY  
+	Method for sending notifications and events.  
+	*  
+	Request applies generally and not to a specific resource. Must be *.  
+HTTP/1.1  
+	HTTP version.  
+
+Headers  
+	HOST  
+	Required. Multicast channel and port reserved for SSDP by Internet Assigned Numbers Authority (IANA). Must be 
+	239.255.255.250:1900. If the port number (“:1900”) is omitted, the receiver should assume the default SSDP port 
+	number of 1900.
+
+CACHE-CONTROL  
+	Required. Must have max-age directive that specifies number of seconds the advertisement is valid. After this duration, 
+	control points should assume the device (or service) is no longer available. Should be greater than or equal to 1800 
+	seconds (30 minutes). Specified by UPnP vendor. Integer.
+	   
+LOCATION  
+	Required. Contains a URL to the UPnP description of the root device. Normally the host portion contains a literal IP 
+	address rather than a domain name in unmanaged networks. Specified by UPnP vendor. Single URL.
+	  
+NT  
+	Required. Notification Type. Must be one of the following. (cf. table above.) Single URI.  
+
+	upnp:rootdevice  
+		Sent once for root device.  
+	
+	uuid:device-UUID  
+		Sent once for each device, root or embedded. Device UUID specified by UPnP vendor.  
+	
+	urn:schemas-upnp-org:device:deviceType:v  
+		Sent once for each device, root or embedded. Device type and version defined by UPnP Forum working 
+		committee. Specifies the highest supported version of the device type. 
+	
+	urn:schemas-upnp-org:service:serviceType:v  
+		Sent once for each service. Service type and version defined by UPnP Forum working committee. Specifies 
+		the highest supported version of the service type.  
+	
+	urn:domain-name:device:deviceType:v  
+		Sent once for each device, root or embedded. Domain name, device type and version defined by UPnP vendor. 
+		Specifies the highest supported version of the device type. Period characters in the domain name must be 
+		replaced with hyphens in accordance with RFC 2141. 
+
+	urn:domain-name:service:serviceType:v  
+		Sent once for each service. Domain name, service type and version defined by UPnP vendor. Specifies the 
+		highest supported version of the service type. Period characters in the domain name must be replaced with 
+		hyphens in accordance with RFC 2141. 
+
+NTS  
+	Required. Notification Sub Type. Must be ssdp:alive. Single URI.  
+
+SERVER  
+	Required. Concatenation of OS name, OS version, UPnP/1.0, product name, and product version. Specified by UPnP 
+	vendor. String. Must accurately reflect the version number of the UPnP Device Architecture supported by the device. 
+	Control points must be prepared to accept a higher minor version number than the control point itself implements. For 
+	example, control points implementing UDA version 1.0 will be able to interoperate with devices implementing UDA 
+	version 1.1. 
+
+USN  
+	Required. Unique Service Name. Identifies a unique instance of a device or service. Must be one of the following. (cf. 
+	table above.) The prefix (before the double colon) must match the value of the UDN element in the device description. 
+	(The section on Description explains the UDN element.) Single URI.  
+
+	uuid:device-UUID::upnp:rootdevice  
+		Sent once for root device. Device UUID specified by UPnP vendor.  
+	uuid:device-UUID  
+		Sent once for every device, root or embedded. Device UUID specified by UPnP vendor.  
+	uuid:device-UUID::urn:schemas-upnp-org:device:deviceType:v  
+		Sent once for every device, root or embedded. Device UUID specified by UPnP vendor. Device type and 
+		version defined by UPnP Forum working committee. Specifies the highest supported version of the device 
+		type. 
+	uuid:device-UUID::urn:schemas-upnp-org:service:serviceType:v  
+		Sent once for every service. Device UUID specified by UPnP vendor. Service type and version defined by UPnP 
+		Forum working committee. Specifies the highest support version of the service type. 
+	uuid:device-UUID::urn:domain-name:device:deviceType:v  
+		Sent once for every device, root or embedded. Device UUID, domain name, device type and version defined 
+		by UPnP vendor. Specifies the highest supported version of the device type. Period characters in the domain 
+		name must be replaced by hyphens in accordance with RFC 2141. 
+	uuid:device-UUID::urn:domain-name:service:serviceType:v  
+		Sent once for service. Device UUID, domain name, service type and version defined by UPnP vendor. Specifies 
+		the highest supported version of the device type. Period characters in the domain name must be replaced by 
+		hyphens in accordance with RFC 2141. 
+ 
+ 
+---------- ssdp:byebye ----------  
+  
+ NOTIFY * HTTP/1.1 
+ HOST: 239.255.255.250:1900 
+ NT: search target 
+ NTS: ssdp:byebye 
+ USN: uuid:advertisement UUID 
+ 
+(No body for request with method NOTIFY, but note that the message must have a blank line following the last HTTP header.)  
+The TTL for the IP packet should default to 4 and should be configurable.  
+Listed below are details for the request line and headers appearing in the listing above. All header values are case sensitive 
+except where noted.
+  
+Request line  
+
+NOTIFY  
+	Method for sending notifications and events.  
+	*  
+	Request applies generally and not to a specific resource. Must be *.  
+
+HTTP/1.1  
+	HTTP version.  
+
+Headers  
+
+	HOST  
+Required. Multicast channel and port reserved for SSDP by Internet Assigned Numbers Authority (IANA). Must be 
+239.255.255.250:1900. If the port number (“:1900”) is omitted, the receiver should assume the default SSDP port 
+number of 1900. 
+
+NT  
+	Required. Notification Type. (See list of required values for NT header in NOTIFY with ssdp:alive above.) Single URI.   
+
+NTS  
+	Required. Notification Sub Type. Must be ssdp:byebye. Single URI.  
+
+USN  
+	Required. Unique Service Name. (See list of required values for USN header in NOTIFY with ssdp:alive above.) Single 
+
+URI.  
+ 
+ 
+---------- M-Search Response ----------
+
+HTTP/1.1 200 OK
+CACHE-CONTROL: max-age = seconds until advertisement expires
+DATE: when response was generated
+EXT:
+LOCATION: URL for UPnP description for root device
+SERVER: OS/version UPnP/1.0 product/version
+ST: search target
+USN: advertisement UUID
+
+Headers
+
+CACHE-CONTROL Required. Must have max-age directive that specifies number of seconds the advertisement is valid. After this duration, control points should assume the device (or service) is no longer available. Should be greater than or equal to 1800 seconds (30 minutes), although exceptions are defined in the text above. Specified by UPnP vendor. Integer.
+
+DATE EXT LOCATION
+
+SERVER
+
+ST
+
+USN
+
+Recommended. When response was generated. “rfc1123-date” as defined in RFC 2616. Required by HTTP Extension Framework. Confirms that the MAN header was understood. (Header only; no value.)
+Required. Contains a URL to the UPnP description of the root device. Normally the host portion contains a literal IP address rather than a domain name in unmanaged networks. Specified by UPnP vendor. Single URL.
+Required. Concatenation of OS name, OS version, UPnP/1.0, product name, and product version. Specified by UPnP vendor. String. Must accurately reflect the version number of the UPnP Device Architecture supported by the device. Control points must be prepared to accept a higher version number than the control point itself implements. For example, control points implementing UDA version 1.0 will be able to interoperate with devices implementing UDA version 1.1.
+Required. Search Target. Single URI. If ST header in request was,
+ssdp:all
+Respond 3+2d+k times for a root device with d embedded devices and s embedded services but only k distinct service types (see section 1.1.2 for a definition of each message to be sent). Value for ST header must be the same as for the NT header in NOTIFY messages with ssdp:alive. (See above.) Single URI.
+upnp:rootdevice Respond once for root device. Must be upnp:rootdevice. Single URI.
+uuid:device-UUID Respond once for each matching device, root or embedded. Must be uuid:device-UUID. Device UUID specified by UPnP vendor. Single URI.
+urn:schemas-upnp-org:device:deviceType:v Respond once for each matching device, root or embedded. Must be urn:schemas-upnp- org:device:deviceType:v. Device type and version defined by UPnP Forum working committee. Should specify the version of the device type contained in the M-SEARCH request.
+urn:schemas-upnp-org:service:serviceType:v Respond once for each matching service type. Must be urn:schemas-upnp-org:service:serviceType:v. Service type and version defined by UPnP Forum working committee. Should specify the version of the service type contained in the M-SEARCH request.
+urn:domain-name:device:deviceType:v Respond once for each matching device, root or embedded. Domain name, device type and version defined by UPnP vendor. Period characters in the domain name must be replaced with hyphens in accordance with RFC 2141. Should specify the version of the device type specified in the M-SEARCH request.
+urn:domain-name:service:serviceType:v Respond once for each matching service type. Domain name, service type and version defined by UPnP vendor. Period characters in the domain name must be replaced with hyphens in accordance with RFC 2141. Should specify the version of the service type contained in the M-SEARCH request.
+Required. Unique Service Name. (See list of required values for USN header in NOTIFY with ssdp:alive above.) Single URI.
+

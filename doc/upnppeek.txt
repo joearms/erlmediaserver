@@ -1,0 +1,13 @@
+<?xml version=\"1.0\"?>\n
+<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\n
+	<s:Body>\n
+		<u:Browse xmlns:u=\"urn:schemas-upnp-org:service:ContentDirectory:1\">\n
+			<ObjectID>0</ObjectID>\n
+			<BrowseFlag>BrowseDirectChildren</BrowseFlag>\n
+			<Filter>*</Filter>\n
+			<StartingIndex>0</StartingIndex>\n
+			<RequestedCount>3000</RequestedCount>\n
+			<SortCriteria></SortCriteria>\n
+		</u:Browse>\n
+	</s:Body>\n
+</s:Envelope>">>
