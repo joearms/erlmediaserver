@@ -118,7 +118,6 @@ start(_Type, _Args) ->
 		ok -> set_conf(Args),
 			  error_logger:info_msg("yaws startet ~n");		
 		Error -> 
-			error_logger:info_msg("yaws exits with error ~p ~n", [Error]),	
 			{stop, Error}
 	end,
     supervisor:start_link({local, ?MODULE}, ?MODULE, []).
@@ -149,15 +148,16 @@ stop(_State) ->
 %% Internal functions
 %% ====================================================================
 set_conf([Port, WorkingDir]) ->
+	{ok, WorkDir} = file:get_cwd(),
 	GC = #gconf{
 				trace = {true, traffic},
-				logdir = WorkingDir ++ "/yaws_logs",
+				logdir = WorkDir ++ "/yaws_logs",
 				yaws = "eMedia Server 1.0"
 				},
 	SC = #sconf{
 				port = Port, 
 				servername = os_info:get_ip_as_string(), listen = {0,0,0,0},
-				docroot = WorkingDir ++ "/docroot", 
+				docroot = WorkDir ++ "/docroot", 
 				appmods = [{"/description/fetch", description_handler},
 						   {"/images/erlmedia.jpg", description_handler},						   						   
 				   		   {"/service/radioconnectionmanager", radioconnectionmanager_handler},

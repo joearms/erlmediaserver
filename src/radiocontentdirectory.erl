@@ -64,6 +64,10 @@ init([]) ->
 	%%initMediaTree(State),
 	{ok, State}.
 
+%% --------------------------------------------------------------------
+%%
+%% --------------------------------------------------------------------
+
 get_dirs() ->
 	{ok, [Dirs]} = application:get_env(?ERLMEDIASERVER_APP_FILE, dirs),
 	Dirs.	
