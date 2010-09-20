@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Wesleyan University</dc:creator>
+  <dc:title>WESU - Wesleyan University</dc:title>
+  <upnp:genre>Colleget</upnp:genre>
+  <dc:description>Various</dc:description>
+  <upnp:region>US - Conneticut</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.radio.wesleyan.edu:8000</dc:relation>
+  <upnp:radioCallSign>WESU</upnp:radioCallSign>
+  <upnp:radioStationID>WESU</upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="8192">http://radio.wesleyan.edu:8000/listen.pls</res>
+</item>
+</DIDL-Lite>
+

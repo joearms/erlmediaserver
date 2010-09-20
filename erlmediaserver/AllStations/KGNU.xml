@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>KGNU</dc:creator>
+  <dc:title>KGNU</dc:title>
+  <upnp:genre>Public Radio</upnp:genre>
+  <dc:description>KGNU is Boulder County's independent, noncommercial community radio station. KGNU broadcasts and netcasts a diverse mix of music, news and information 24 hours a day.</dc:description>
+  <upnp:region>US - Boulder, CO</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.kgnu.org</dc:relation>
+  <upnp:radioCallSign>KGNU</upnp:radioCallSign>
+  <upnp:radioStationID>88.5</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="8192">http://www.kgnu.org/kgnump3.m3u</res>
+</item>
+</DIDL-Lite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Celtic Grove</dc:creator>
+  <dc:title>Celtic Grove</dc:title>
+  <upnp:genre>Folk</upnp:genre>
+  <dc:description>First and Finest Celtic E-Zine and Webcast</dc:description>
+  <upnp:region>US</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.celticgrove.com</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="8192">http://205.188.234.38:8040/listen.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="3072">http://64.202.98.33:2860/listen.pls</res>
+</item>
+</DIDL-Lite>

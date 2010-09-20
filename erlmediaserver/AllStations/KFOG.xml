@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>KFOG</dc:creator>
+  <dc:title>KFOG</dc:title>
+  <upnp:genre>Rock</upnp:genre>
+  <dc:description>World Class Rock</dc:description>
+  <upnp:region>US - San Franciso</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.kfog.com</dc:relation>
+  <upnp:radioCallSign>KFOG</upnp:radioCallSign>
+  <upnp:radioStationID>104.5</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-ms-asx:*" bitrate="8192">http://38.113.221.141/KFOG_FM</res>
+
+</item>
+</DIDL-Lite>

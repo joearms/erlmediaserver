@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Sky</dc:creator>
+  <dc:title>Sky - New Age</dc:title>
+  <upnp:genre>New Age</upnp:genre>
+  <dc:description>New Age Music</dc:description>
+  <upnp:region>US</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.sky.fm</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="12288">http://www.sky.fm/mp3/newage.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="3072">http://www.sky.fm/mp3/newage_low.pls</res>
+</item>
+</DIDL-Lite>

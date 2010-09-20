@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>New Mexico State University</dc:creator>
+  <dc:title>KRWG</dc:title>
+  <upnp:genre>Public Radio</upnp:genre>
+  <dc:description>KRWG 90.7 FM is an award winning non-commercial public radio station licensed to and operated by New Mexico State University as a community service to southern New Mexico and the El Paso area of far westTexas.</dc:description>
+  <upnp:region>US - Las Cruces, NM</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.krwgfm.org</dc:relation>
+  <upnp:radioCallSign>KRWG</upnp:radioCallSign>
+  <upnp:radioStationID>90.7</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="4096">http://www.publicbroadcasting.net/krwg/ppr/krwg.m3u</res>
+</item>
+</DIDL-Lite>
+

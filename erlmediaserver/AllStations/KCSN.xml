@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>California State Northridge</dc:creator>
+  <dc:title>KCSN</dc:title>
+  <upnp:genre>Classical</upnp:genre>
+  <dc:description>Arts and Roots Radio</dc:description>
+  <upnp:region>US - Los Angeles</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.kcsn.org</dc:relation>
+  <upnp:radioCallSign>KCSN</upnp:radioCallSign>
+  <upnp:radioStationID>88.5</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="16384">http://130.166.72.114:8002/listen.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="4096">http://130.166.72.114:8000/listen.pls</res>
+</item>
+</DIDL-Lite>

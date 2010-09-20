@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>UNC Chapel Hill</dc:creator>
+  <dc:title>WUNC - UNC/Chapel Hill</dc:title>
+  <upnp:genre>College</upnp:genre>
+  <dc:description>WUNC-FM Radio, operating at 100,000 watts at an assigned stereo frequency of 91.5 FM, is a public service of The University of North Carolina at Chapel Hill</dc:description>
+  <upnp:region>US - Chapel Hill</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.wunc.org</dc:relation>
+  <upnp:radioCallSign>WUNC</upnp:radioCallSign>
+  <upnp:radioStationID>91.5</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="8192">http://www.wunc.org/about/listen.pls</res>
+</item>
+</DIDL-Lite>
+

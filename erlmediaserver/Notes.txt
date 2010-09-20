@@ -1,0 +1,146 @@
+
+#----------------------------------------------------------------------------
+#       Notes on layout/formatting of radio station XML files and 
+#       options for exporting useful DIDL-Lite object representations
+#----------------------------------------------------------------------------
+
+BACKGROUND
+
+Internet radio stations use two basic schemes for specifying the Internet
+addresses used to retrieve content via HTTP-get.
+
+1.  Simple single Internet address for each supported format/bitrate
+    combination, e.g.
+
+      http://64.236.34.67:80/stream-64k/2001.mpg
+      http://64.236.34.67:80/stream-128k/2001.mpg
+      .
+      .
+
+2.  Address of playlist for each supported format/bitrate. Playlists are
+    in M3U or PLS format. Each playlist contains a set of links that can
+    be used to access a given format/bitrate. The multiple links are used
+    to spread the connection load across multiple servers.  So, for example,
+    the top-level links look like:
+
+      http://64.236.34.67:80/stream-64k/2001.m3u
+      http://64.236.34.67:80/stream-128k/2001.m3u
+
+    The first playlist would contain a set of links for the 64-bit stream,
+    e.g.:
+
+      http://64.236.34.67:80/stream-64k/2001-server1.mpg
+      http://64.236.34.67:80/stream-64k/2001-server2.mpg
+      http://64.236.34.67:80/stream-64k/2001-server3.mpg
+      http://64.236.34.67:80/stream-64k/2001-server4.mpg
+
+The thing to note about the 2nd scheme is that though most stations
+strive to keep the playlist addresses static, the individual links 
+in each playlist may change from time-to-time.  Because of this, 
+an external database should only track the playlist addresses.
+A flexible UPnP server should provide the capability to read the playlists
+and retrieve the individual links, to handle the case of a renderer that
+does not support the playlist format. 
+
+
+DIDL-LITE REPRESENTATION
+
+DIDL-Lite supports either/both of the radio station address conventions
+pretty naturally since a CDS audio broadcast object can have multiple
+resources, each with a different MIME-type and bit rate.  Below is a
+list of two stations encoded using DIDL-Lite. 
+
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+n<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>SOMA FM</dc:creator>
+  <dc:title>Groove Salad</dc:title>
+  <upnp:genre>Ambient</upnp:genre>
+  <dc:description>A tasty plate of ambient beats and grooves</dc:description>
+  <dc:language>English</dc:language>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpeg:*" bitrate="8192">http://64.236.34.67:80/stream/1016</res>
+  <res protocolInfo="http-get:*:audio/mpeg:*" bitrate="16384">http://64.236.34.67:80/stream/1018</res>
+</item>
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Bill &amp; Rebecca</dc:creator>
+  <dc:title>Radio Paradise</dc:title>
+  <upnp:genre>Rock</upnp:genre>
+  <dc:description>Eclectic Mix of Adult Rock</dc:description>
+  <dc:language>English</dc:language>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="8192">http://www.radioparadise.com/musiclinks/rp_64.m3u</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="16384">http://www.radioparadise.com/musiclinks/rp_128.m3u</res>
+</item>
+</DIDL-Lite>
+
+
+PRACTICAL INTERNET RADIO ISSUES FOR UPnP SERVERS
+
+In an ideal world, each Internet radio station would provide an XML file
+similar to the above, preferably always using the playlist method even if
+only a single link is used for a given protocol/bitrate (no load sharing).
+A single XML file at a known address relative to the well-known station
+address could then be used for retrieving *all* the relevant links supported
+by the station (e.g. http://www.radioparadise.com/stationLinks.xml).
+This is probably not gonna happen any time soon.
+
+The other issue relates to UPnP renderer support for this scheme.  
+Where multiple protocols/bitrates are provided via multiple resources,
+renderers should ideally provide the end user with a way of choosing which
+protocol/bitrate to use.  This will be supported eventually, but not yet!
+
+In order to deal with the issues and provide a consistent, useful set 
+of objects to UPnP renderers, the following strategy is used:
+
+1.  For the DIDL-Lite database itself, use information consistent with 
+    that provided by the stations web site (support both single link and 
+    playlist schemes)
+
+2.  Export a modified set of CDS objects, with the following heirarchy
+
+    AllStations (folder)
+     |
+     |-Groove Salad (folder)
+     |   |
+     |   |-Groove Sald (MPEG/64k) (folder)        -> Extended-M3U resource 
+     |   |  |-Groove Salad (MPEG/64k #1) (item)   -> MPEG resource 
+     |   |  |-Groove Salad (MPEG/64k #2) (item)   -> .
+     |   |  |-Groove Salad (MPEG/64k #3) (item)   -> .
+     |   |
+     |   |-Groove Sald (MPEG/128k) (folder)       -> Extended-M3U resource 
+     |   |  |-Groove Salad (MPEG/128k #1)         -> MPEG resource 
+     |   |  |-Groove Salad (MPEG/128k #2)         -> .
+     |   |  |-Groove Salad (MPEG/128k #3)         -> .
+     |   |  
+     |-Radio Paradise (folder)
+     |   |
+     |   |-Radio Paradise (MPEG/64k) (folder)
+     |   |  |-Radio Paradise (MPEG/64k #1)
+     |   |  |-Radio Paradise (MPEG/64k #2)
+     |   |  |-Radio Paradise (MPEG/64k #3)
+     |   |
+     |   |-Radio Paradise (MPEG/128k) (folder)
+     |   |  |-Radio Paradise (MPEG/128k #1)
+     |   |  |-Radio Paradise (MPEG/128k #2)
+     |   |  |-Radio Paradise (MPEG/128k #3)
+     |   |  
+
+Note the use of the extended M3U playlist MIME-type in this scheme. The
+server converts all the 'base playlists (M3U/PLS/Whatever) to this form,
+and serves them up via a small HTTP server residing on the MediaServer.
+
+The server also converts the single net radio address to the extended 
+playlist form. Lastly, the contents (links) of the playlist are supplied
+as UPnP objects of class 'object.item.audioItem.audioBroadcast'.
+
+The station name is included in the title at every level of the tree since 
+the title is typically what the renderer displays in its UI. (A title of
+just MPEG/128k would be annoying) 

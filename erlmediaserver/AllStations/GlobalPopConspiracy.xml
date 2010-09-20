@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Global Pop Conspiracy</dc:creator>
+  <dc:title>Global Pop Conspiracy</dc:title>
+  <upnp:genre>Alternative</upnp:genre>
+  <dc:description>Eclectic rock mix</dc:description>
+  <upnp:region>UK</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.globalpopconspiracy.com/radio</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="16384">http://radio.globalpopconspiracy.com:8000/gpc/hi.mp3.m3u</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="3072">http://radio.globalpopconspiracy.com:8000/gpc/lo.mp3.m3u</res>
+</item>
+</DIDL-Lite>

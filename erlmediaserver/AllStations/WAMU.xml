@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>American University Radio</dc:creator>
+  <dc:title>WAMU</dc:title>
+  <upnp:genre>Public Radio</upnp:genre>
+  <dc:description>WAMU 88.5 FM is the leading public radio station for NPR news and information in the greater Washington D.C. area. It is member-supported, professionally-staffed, and licensed to American University.</dc:description>
+  <upnp:region>US - Wash, D.C.</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.wamu.org</dc:relation>
+  <upnp:radioCallSign>WAMU</upnp:radioCallSign>
+  <upnp:radioStationID>88.5</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="16384">http://www.wamu.org/audio/wamu.m3u</res>
+</item>
+</DIDL-Lite>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>UC/Santa Barbara</dc:creator>
+  <dc:title>KCSB - UC/Santa Barbara</dc:title>
+  <upnp:genre>College</upnp:genre>
+  <dc:description>KCSB 91.9 FM is a community-oriented, non-commercial radio station located under Storke Tower on the compus of the University of California, Santa Barbara. KCSB's mission is to broadcast programs that you will not hear anywhere else in the Tri-Counties area.</dc:description>
+  <upnp:region>US - Santa Barbara</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.kcsb.org</dc:relation>
+  <upnp:radioCallSign>KCSB</upnp:radioCallSign>
+  <upnp:radioStationID>91.9</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="16384">http://www.kcsb.org/webcast/test128.m3u</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="8192">http://www.kcsb.org/webcast/test64.m3u</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="3072">http://www.kcsb.org/webcast/test24.m3u</res>
+</item>
+</DIDL-Lite>
+
+
+
+
+

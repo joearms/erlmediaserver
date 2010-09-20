@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Bass Drive</dc:creator>
+  <dc:title>Bass Drive</dc:title>
+  <upnp:genre>Techno</upnp:genre>
+  <dc:description>BassDrive - Music 24x7 DnB &amp; Jungle </dc:description>
+  <upnp:region>US - Illinois</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.bassdrive.com</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="16384">http://www.bassdrive.com/BassDrive.m3u</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="8192">http://www.bassdrive.com/BassDrive6.m3u</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="4096">http://www.bassdrive.com/BassDrive3.m3u</res>
+</item>
+</DIDL-Lite>

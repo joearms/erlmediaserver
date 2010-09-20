@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>SOMA FM</dc:creator>
+  <dc:title>SOMA FM - Drone Zone</dc:title>
+  <upnp:genre>Ambient,Techno</upnp:genre>
+  <dc:description>Served best chilled, safe with most medications. Atmospheric textures with minimal beats.</dc:description>
+  <upnp:region>US - San Francisco</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.somafm.com</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="16384">http://www.somafm.com/dronezone.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="7168">http://www.somafm.com/dronezone56.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="3072">http://www.somafm.com/dronezone24.pls</res>
+</item>
+</DIDL-Lite>

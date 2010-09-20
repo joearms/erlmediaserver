@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Northeastern University</dc:creator>
+  <dc:title>WRBB - Northeastern</dc:title>
+  <upnp:genre>College</upnp:genre>
+  <dc:description>WRBB is Northeastern University's non-commercial, student-run radio station.</dc:description>
+  <upnp:region>US - Boston</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.wrbbradio.org</dc:relation>
+  <upnp:radioCallSign>WRBB</upnp:radioCallSign>
+  <upnp:radioStationID>104.9</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="16384">http://129.10.163.99:8000/listen.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="3072">http://129.10.160.194:8000/listen.pls</res>
+</item>
+</DIDL-Lite>
+
+

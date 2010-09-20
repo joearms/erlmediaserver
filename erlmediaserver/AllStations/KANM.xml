@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Texas A&amp;M</dc:creator>
+  <dc:title>KANM - Texas A&amp;M</dc:title>
+  <upnp:genre>College</upnp:genre>
+  <dc:description>KANM is Texas A&amp;M's only student run radio station. We strive to enrich the Bryan/College Station community by making unconventional and non-mainstream music available to the general public.</dc:description>
+  <upnp:region>US - Texas</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://kanm.tanu.edu</dc:relation>
+  <upnp:radioCallSign>KANM</upnp:radioCallSign>
+  <upnp:radioStationID>1690</upnp:radioStationID>
+  <upnp:radioBand>AM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="16384">http://kanm.tamu.edu/listen.m3u</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="24576">http://kanm.tamu.edu/ultra.m3u</res>
+</item>
+</DIDL-Lite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Mystic Radio</dc:creator>
+  <dc:title>Mystic Radio - 80's</dc:title>
+  <upnp:genre>Rock</upnp:genre>
+  <dc:description>At Mystic Radio, we endeavor to bring you the most uplifting messages from the artists of all popular genres. We provide an artful form of radio programming that blends music, thought, philosophy, and lifestyle.</dc:description>
+  <upnp:region>US</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.mysticradio.com</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="16384">http://mystic1.streamguys.com:7150/listen.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="7168">http://live.str3am.com:2820/listen.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="3072">http://live.str3am.com:2800/listen.pls</res>
+</item>
+</DIDL-Lite>

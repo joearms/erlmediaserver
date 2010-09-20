@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>KUNC</dc:creator>
+  <dc:title>KUNC</dc:title>
+  <upnp:genre>Public Radio</upnp:genre>
+  <dc:description>Community Radio for Northern Colorado</dc:description>
+  <upnp:region>Northern Colorado</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.kunc.org</dc:relation>
+  <upnp:radioCallSign>KUNC</upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="8192">http://www.publicbroadcasting.net/kunc/ppr/kunc.pls</res>
+</item>
+</DIDL-Lite>

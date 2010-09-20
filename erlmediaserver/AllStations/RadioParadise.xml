@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Radio Paradise</dc:creator>
+  <dc:title>Radio Paradise</dc:title>
+  <upnp:genre>Rock/Eclectic</upnp:genre>
+  <dc:description>Eclectic Mix of Adult Rock</dc:description>
+  <upnp:region>US - Northern CA</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.radioparadise.com</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="16384">http://www.radioparadise.com/musiclinks/rp_128.m3u</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="8192">http://www.radioparadise.com/musiclinks/rp_64.m3u</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="4096">http://www.radioparadise.com/musiclinks/rp_32.m3u</res>
+</item>
+</DIDL-Lite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Santa Monica College</dc:creator>
+  <dc:title>KCRW - Santa Monica College</dc:title>
+  <upnp:genre>College</upnp:genre>
+  <dc:description>KCRW provides more then 450,000 listeners each week with an eclectic schedule of news, locally and nationally produced music, public affairs, political analysis and cultural programs.</dc:description>
+  <upnp:region>US - Santa Monica</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.kcrw.com</dc:relation>
+  <upnp:radioCallSign>KCRW</upnp:radioCallSign>
+  <upnp:radioStationID>89.9</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="16384">http://www.kcrw.com/pls/kcrwmusic.pls</res>
+</item>
+</DIDL-Lite>

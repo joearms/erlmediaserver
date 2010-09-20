@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>NetMusique</dc:creator>
+  <dc:title>Electrique</dc:title>
+  <upnp:genre>Dance,Techno</upnp:genre>
+  <dc:description>ELECTRIQUE - Wicked bad beats</dc:description>
+  <upnp:region>US</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.netmusique.com</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="16384">http://www.netmusique.com/listen.php?type=m3u&amp;stream=tm</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="8192">http://www.netmusique.com/listen.php?type=m3u&amp;stream=tm64</res>
+</item>
+</DIDL-Lite>

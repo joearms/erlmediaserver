@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Digitally Imported</dc:creator>
+  <dc:title>DI - Hard Trance</dc:title>
+  <upnp:genre>Trance,Dance</upnp:genre>
+  <dc:description>Electronic dance music with highly addictive elements</dc:description>
+  <upnp:region>US - New York</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.di.fm</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="12288">http://www.di.fm/mp3/hardtrance.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="7168">http://www.di.fm/mp3/hardtrance56k.pls</res>
+</item>
+</DIDL-Lite>

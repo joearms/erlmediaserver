@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Bluegrass Country</dc:creator>
+  <dc:title>Bluegrass Country</dc:title>
+  <upnp:genre>Country</upnp:genre>
+  <dc:description>Our hosts are here to bring you the best in traditional and contemporary bluegrass. They've been hosting these shows for years and now they bring the best of bluegrass to a worldwide audience.</dc:description>
+  <upnp:region>US - Washington, D.C.</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.bluegrasscountry.org</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="7168">http://bluegrasscountry.org/a/bgc.m3u</res>
+</item>
+</DIDL-Lite>
