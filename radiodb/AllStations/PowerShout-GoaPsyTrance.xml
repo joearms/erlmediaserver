@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>PowerShout</dc:creator>
+  <dc:title>Powershout - Goa/Psy Trance</dc:title>
+  <upnp:genre>Trance,Techno</upnp:genre>
+  <dc:description> Powershout is the ultimate station for Techno and Trance on the web, offering non stop music stream and Trance&amp;Dance video stream</dc:description>
+  <upnp:region>US</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.powershout.com</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="16384">http://212.62.250.14:7950/listen.pls</res>
+</item>
+</DIDL-Lite>

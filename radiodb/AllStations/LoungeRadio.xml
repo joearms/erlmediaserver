@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Lounge Radio</dc:creator>
+  <dc:title>Lounge Radio</dc:title>
+  <upnp:genre>Ambient</upnp:genre>
+  <dc:description>Enjoy this light summer-plate consisting of fresh beats of NuJazz - dipped info the warmth of Brazil Electro and finally served with a breath of Ambient</dc:description>
+  <upnp:region>Switzerland</upnp:region>
+  <dc:language>Swiss</dc:language>
+  <dc:relation>http://www.lounge-radio.com</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="7168">http://www.lounge-radio.com/listen.pls</res>
+</item>
+</DIDL-Lite>

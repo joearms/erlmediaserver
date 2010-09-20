@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>The Evergeen State College</dc:creator>
+  <dc:title>KAOS - Evergreen State College</dc:title>
+  <upnp:genre>College</upnp:genre>
+  <dc:description>KAOS 89.3FM Olympia, WA USA Live from The Evergreen State College</dc:description>
+  <upnp:region>US - Olympia, WA</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://kaos.evergreen.edu</dc:relation>
+  <upnp:radioCallSign>KAOS</upnp:radioCallSign>
+  <upnp:radioStationID>89.3</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="16384">http://66.224.103.98:8930/listen.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="7168">http://66.224.103.98:9930/listen.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="3072">http://66.224.103.98:10930/listen.pls</res>
+</item>
+</DIDL-Lite>
+
+
+

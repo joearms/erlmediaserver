@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Detroit Public Radio</dc:creator>
+  <dc:title>WDET - Detroit Public Radio</dc:title>
+  <upnp:genre>Public Radio</upnp:genre>
+  <dc:description>A different kind of radio</dc:description>
+  <upnp:region>US - Detroit</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.wdetfm.org</dc:relation>
+  <upnp:radioCallSign>WDET</upnp:radioCallSign>
+  <upnp:radioStationID>101.9</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="7168">http://141.217.119.35:8000/listen.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="7168">http://141.217.119.35:8005/listen.pls</res> 
+</item>
+</DIDL-Lite>
+

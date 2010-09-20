@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Chronix Radio</dc:creator>
+  <dc:title>Chronix Aggression</dc:title>
+  <upnp:genre>Rock/Metal</upnp:genre>
+  <dc:description>ChroniX Aggression is listener-supported, commercial-free, Metal/Rock/alternative Internet only radio station</dc:description>
+  <upnp:region>US</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.chronixradio.com</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="16384">http://www.shoutcast.com/sbin/shoutcast-playlist.pls?rn=8524&amp;file=filename.pls</res>
+</item>
+</DIDL-Lite>

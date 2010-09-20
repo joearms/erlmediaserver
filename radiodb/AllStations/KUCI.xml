@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>University of California, Irvine</dc:creator>
+  <dc:title>KUCI - UC/Irvine</dc:title>
+  <upnp:genre>College</upnp:genre>
+  <dc:description>Eclectic Music - Engaging Talk</dc:description>
+  <upnp:region>US - Irvine</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.kuci.org</dc:relation>
+  <upnp:radioCallSign>KUCI</upnp:radioCallSign>
+  <upnp:radioStationID>88.9</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="16384">http://www.kuci.org/128mp3stream.m3u</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="3072">http://www.kuci.org/mp3stream.m3u</res>
+</item>
+</DIDL-Lite>
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Radio Caroline</dc:creator>
+  <dc:title>Radio Caroline</dc:title>
+  <upnp:genre>Various</upnp:genre>
+  <dc:description>Europe's first album station</dc:description>
+  <upnp:region>UK</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.radiocaroline.co.uk</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="8192">http://lazygit.no-ip.info:5560/listen.pls</res>
+</item>
+</DIDL-Lite>
+

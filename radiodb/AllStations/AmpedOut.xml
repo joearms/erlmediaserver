@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Amped Out</dc:creator>
+  <dc:title>Amped Out</dc:title>
+  <upnp:genre>Ambient</upnp:genre>
+  <dc:description>Amped Out: it's like god's rubbing your industrial tummy</dc:description>
+  <upnp:region>US</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.ampedout.net</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="16384">http://www.ampedout.net/ampedOut-128k.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="3072">http://www.ampedout.net/ampedOut-24k.pls</res>
+</item>
+</DIDL-Lite>
+

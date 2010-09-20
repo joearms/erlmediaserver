@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Harvard University</dc:creator>
+  <dc:title>WHRB - Harvard</dc:title>
+  <upnp:genre>College</upnp:genre>
+  <dc:description>For sixty years, WHRB 95.3 FM has been Boston's first source for exciting, entertaining, and enlightening music broadcasts. Harvard Radio's daily broadcast of Classical music, Jazz, and underground Rock explore a great repertory of music left largely untouched by other commercial stations.</dc:description>
+  <upnp:region>US - Boston</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.whrb.org</dc:relation>
+  <upnp:radioCallSign>WHRB</upnp:radioCallSign>
+  <upnp:radioStationID>95.3</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="16384">http://www.whrb.org/streams/whrb.m3u</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="3072">http://www.whrb.org/streams/whrb2.m3u</res>
+</item>
+</DIDL-Lite>
+
+

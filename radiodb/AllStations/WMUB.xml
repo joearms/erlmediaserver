@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>WMUB</dc:creator>
+  <dc:title>WMUB</dc:title>
+  <upnp:genre>Public Radio</upnp:genre>
+  <dc:description>WMUB began broadcasting in FM in 1950, and today provides more than 35,000 listeners with a unique blend of news, music, entertainment, and intelligent talk. WMUB combines programming from National Public Radio and Public Radio International, as well as an extensive array of original locally-produced programming</dc:description>
+  <upnp:region>US - Ohio</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.wmub.org</dc:relation>
+  <upnp:radioCallSign>WMUB</upnp:radioCallSign>
+  <upnp:radioStationID>88.5</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="3072">http://www.publicbroadcasting.net/wmub/ppr/wmub.m3u</res>
+</item>
+</DIDL-Lite>

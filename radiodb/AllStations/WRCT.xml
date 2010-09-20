@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Carnegie Mellon University</dc:creator>
+  <dc:title>WRCT - Carnegie Mellon</dc:title>
+  <upnp:genre>College</upnp:genre>
+  <dc:description>Our mission as a non-commercial radio station is to entertain as well as educate our listening audience</dc:description>
+  <upnp:region>US</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.wrct.org</dc:relation>
+  <upnp:radioCallSign>WRCT</upnp:radioCallSign>
+  <upnp:radioStationID>88.3</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="16384">http://stream.wrct.org:8000/wrct-hi.mp3.m3u</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="3072">http://stream.wrct.org:8000/wrct-lo.mp3.m3u</res>
+</item>
+</DIDL-Lite>
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>Unknown</dc:creator>
+  <dc:title>Smooth Jazz</dc:title>
+  <upnp:genre>Jazz</upnp:genre>
+  <dc:description>Live from Monterey Bay, California</dc:description>
+  <upnp:region>US - Monterey Bay, CA</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.smoothjazz.com</dc:relation>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID></upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="16384">http://www.smoothjazz.com/scast_hi.m3u</res>
+</item>
+</DIDL-Lite>
+

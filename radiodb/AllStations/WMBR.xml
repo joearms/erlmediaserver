@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>MIT</dc:creator>
+  <dc:title>WMBR - MIT</dc:title>
+  <upnp:genre>College</upnp:genre>
+  <dc:description>WMBR's unique and innovative programming ranges from hip-hop to classical, punk rock to jazz, blues to celtic fiddle tunes.</dc:description>
+  <upnp:region>US - Boston</upnp:region>
+  <dc:language>English</dc:language>
+  <dc:relation>http://www.wmbr.org</dc:relation>
+  <upnp:radioCallSign>WMBR</upnp:radioCallSign>
+  <upnp:radioStationID>88.1</upnp:radioStationID>
+  <upnp:radioBand>FM</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="16384">http://wmbr.org/WMBR_live_128.m3u</res>
+  <res protocolInfo="http-get:*:audio/mpegurl:*" bitrate="3072">http://wmbr.org/WMBR_live_24.m3u</res>
+</item>
+</DIDL-Lite>
+
+
