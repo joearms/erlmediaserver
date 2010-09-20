@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp">
+<item>
+  <upnp:class>object.item.audioItem.audioBroadcast</upnp:class>
+  <dc:creator>SOMA FM</dc:creator>
+  <dc:title>Indie Pop Rocks</dc:title>
+  <upnp:genre>New Age</upnp:genre>
+  <dc:description>New and your favorite indie pop tracks</dc:description>
+  <dc:language>English</dc:language>
+  <upnp:radioCallSign></upnp:radioCallSign>
+  <upnp:radioStationID>www.somafm.com</upnp:radioStationID>
+  <upnp:radioBand>Internet</upnp:radioBand>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="16384">http://www.somafm.com/indiepop.pls</res>
+  <res protocolInfo="http-get:*:audio/x-scpls:*" bitrate="3072">http://www.somafm.com/indiepop24.pls</res>
+</item>
+</DIDL-Lite>
