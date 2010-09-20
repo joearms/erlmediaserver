@@ -116,8 +116,10 @@ start(_Type, _Args) ->
 	Args = lists:map(fun (Var) -> {ok, Value} = application:get_env(?ERLMEDIASERVER_APP_FILE , Var),Value end,[port, working_dir]),
 	case application:start(yaws) of 
 		ok -> set_conf(Args),
-			  error_logger:info_msg("yaws wurde gestartet ~n");		
-		Error -> {stop, Error}
+			  error_logger:info_msg("yaws startet ~n");		
+		Error -> 
+			error_logger:info_msg("yaws exits with error ~p ~n", [Error]),	
+			{stop, Error}
 	end,
     supervisor:start_link({local, ?MODULE}, ?MODULE, []).
 
