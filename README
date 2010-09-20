@@ -6,3 +6,5 @@ How does things work together
 
 After starting the erlmediaserver, a yaws webserver will be avaiable under the current ip address on port 5001. 
 Also ssdp is started. This is the server which send the alive message via multicast 1900. The ssdp will also receive messages from upnp client on this port. 
+
+When the server is started and you know the ip you can enter the URL http://<IP>:5001/description/fetch and you will see the description of the server
