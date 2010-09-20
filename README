@@ -1,0 +1,4 @@
+Required software
+
+To use the erlmediaserver you have to install yaws in your enviroment. In the Makefile there is the path to the yaws installation included.
+

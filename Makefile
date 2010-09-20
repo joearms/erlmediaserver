@@ -1,7 +1,7 @@
 ERL=erl +A 1
 PS3_SHELL=-pa ${PWD}/ebin -boot start_sasl -config ${PWD}/priv/elog -pa /usr/local/lib/yaws/ebin -yaws embedded true
 HOSTNAME = $(shell hostname)
-
+NODE=test
 all: compile 
 
 compile:
